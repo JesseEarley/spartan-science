@@ -1,0 +1,102 @@
+<!-- internal.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feature Article</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-serif">
+
+<header class="bg-white shadow p-4 md:p-6 sticky top-0 z-50">
+  <div class="flex justify-between items-center">
+        <a href="index.html">
+            <h1 class="text-3xl md:text-4xl font-bold">SPARTAN<span class="text-green-500">SCIENCE</span></h1>
+        </a>
+    <!-- Mobile menu button -->
+    <button id="navToggle" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-sm uppercase">
+      <a href="internal.html" class="hover:underline">Features</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobileMenu" class="hidden flex-col space-y-2 mt-4 md:hidden text-sm uppercase">
+      <a href="index.html" class="hover:underline">Cover</a>
+      <a href="internal.html" class="hover:underline">Features</a>
+  </div>
+</header>
+
+
+  <!-- Article Content -->
+  <main class="max-w-6xl mx-auto py-16 px-6 bg-white shadow-lg">
+    <article class="prose prose-lg max-w-none">
+      <h2 class="text-4xl font-bold mb-4 leading-tight">Painting The Picture</h2>
+      <p class="text-gray-500 text-sm mb-10">By Caleb Hess | June 2025</p>
+
+      <!-- Hero Image -->
+      <img src="https://images.pexels.com/photos/3755761/pexels-photo-3755761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600" alt="Feature" class="w-full rounded-lg shadow mb-10" />
+
+      <p>
+        In today’s shifting landscape of culture and leadership, the definition of power is evolving. No longer confined to corporate boardrooms or political podiums, influence now pulses through digital spheres, grassroots movements, and independent voices.
+      </p>
+
+      <!-- Full-width image -->
+      <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800" alt="Leadership scene" class="w-full rounded-lg shadow my-10" />
+
+      <p>
+        This transformation has redefined how we view authority. Charisma, community, and connection are valued just as much as traditional credentials. The democratization of media and the rise of social platforms have created new power structures.
+      </p>
+
+      <!-- Side-by-side images (magazine-style grid) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800" alt="Activist" class="w-full rounded-lg shadow" />
+        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=800" alt="Activist" class="w-full rounded-lg shadow" />
+      </div>
+
+      <h3 class="text-2xl font-semibold mt-10 mb-4">A Conversation with Change Makers</h3>
+      <p>
+        We spoke with entrepreneurs, artists, and activists who are driving change at every level. Their stories reflect the urgency and optimism of this moment.
+      </p>
+
+      <!-- Pull quote -->
+      <blockquote class="border-l-4 border-red-500 pl-4 italic text-lg my-8">
+        “True influence is measured by the ripple effect you create, not the noise you make.”
+      </blockquote>
+
+      <p>
+        These individuals don’t just hold titles — they ignite movements, mentor others, and create platforms for unheard voices.
+      </p>
+
+      <!-- Centered full-width visual quote -->
+      <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600" alt="Social movement" class="w-full rounded-lg shadow my-10" />
+
+      <p>
+        As we dive into their journeys, one thing becomes clear: power today is fluid, empathetic, and deeply personal.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-500">
+    © 2025 College of Natural Science. All rights reserved.
+  </footer>
+
+
+    <!-- Script for mobile nav toggle -->
+  <script>
+    document.getElementById('navToggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
