@@ -1,0 +1,109 @@
+    * {
+      font-family: 'Metropolis', sans-serif;
+    }
+    .grid__container--large {
+      max-width: 1170px;
+      margin: 0 auto;
+      grid-template-columns: repeat(12, 1fr);
+      display: grid;
+      gap: 1rem;
+    }
+
+    .grid__column--span3 {
+      grid-column: span 3;
+    }
+
+    .grid__column--span9 {
+      grid-column: span 9;
+    }
+
+    .applicationFooter {
+      color: #555;
+      padding: 2rem;
+    }
+
+    .applicationFooter svg {
+      fill: #18453b;
+      max-width: 250px;
+      margin-left: 10px;
+      align-self: center;
+    }
+
+    .applicationFooter a {
+      color: #18453b;
+    }
+
+    #FooterLinks {
+      width: fit-content
+    }
+
+    #FooterLinks ul {
+      border-bottom: 1px dotted #555;
+      margin-bottom: .5rem;
+
+    }
+
+    .applicationFooter ul {
+      margin: 0;
+    }
+
+    .applicationFooter ul li {
+      display: inline-block;
+      font-size: .8rem;
+      padding: 0 .5rem;
+    }
+
+    .applicationFooter #FooterLinks li,
+    .applicationFooter #FooterInfo li {
+      border-left: 1px solid #555;
+    }
+
+    .applicationFooter #FooterLinks li:first-child,
+    .applicationFooter #FooterInfo li:first-child {
+      border: none;
+    }
+
+    .applicationFooter #FooterInfo a {
+      color: #18453b;
+    }
+
+    .applicationFooter__wordmark {
+      align-items: center;
+      display: flex
+    }
+
+    .applicationFooter__wordmark a {
+      flex: 1;
+    }
+
+    .hideDesktop{
+      display: none;
+    }
+    .hideMobile {
+      display: flex;
+    }
+
+    @media screen and (max-width: 1200px) {
+      footer {
+        text-align: center;
+      }
+
+      #FooterLinks {
+        margin: 0 auto
+      }
+
+      .grid__column--span3,
+      .grid__column--span9 {
+        grid-column: span 12;
+      }
+
+      .applicationFooter svg {
+        margin: 0 auto;
+      }
+      .hideMobile {
+        display: none;
+      }
+      .hideDesktop {
+        display: flex;
+      }
+    }
