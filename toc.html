@@ -1,23 +1,20 @@
 <!-- internal.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Feature Article</title>
   <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    *{
-        font-family: 'Metropolis', sans-serif;
-    }
-  </style>
 </head>
+
 <body class="bg-gray-100 text-gray-900 font-serif">
 
-<header class="bg-white shadow p-4 md:p-4 sticky top-0 z-50">
-  <div class="flex justify-between items-center">
+  <header class="bg-white shadow p-4 md:p-4 sticky top-0 z-50">
+    <div class="flex justify-between items-center">
       <div class="flex flex-col">
         <a class="mb-2" href="/" aria-label="Michigan State University"><!--?xml version="1.0" encoding="UTF-8"?-->
           <svg width="296px" height="33px" viewBox="0 0 296 33" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -145,25 +142,23 @@
           <span class="text-3xl md:text-4xl font-bold">SPARTAN<span class="text-green-500">SCIENCE</span></span>
         </a>
       </div>
-    <!-- Mobile menu button -->
-    <button id="navToggle" class="md:hidden focus:outline-none">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-           viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
-    </button>
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6 text-sm uppercase">
-      <a href="toc.html" class="hover:underline">In This Issue...</a>
-    </nav>
-  </div>
+      <!-- Mobile menu button -->
+      <button id="navToggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex space-x-6 text-sm uppercase">
+        <a href="toc.html" class="hover:underline">In This Issue...</a>
+      </nav>
+    </div>
 
-  <!-- Mobile Nav -->
-  <div id="mobileMenu" class="hidden flex-col space-y-2 mt-4 md:hidden text-sm uppercase">
+    <!-- Mobile Nav -->
+    <div id="mobileMenu" class="hidden flex-col space-y-2 mt-4 md:hidden text-sm uppercase">
       <a href="toc.html" class="hover:underline">In This Issue...</a>
-  </div>
-</header>
+    </div>
+  </header>
 
 
   <!-- Article Content -->
@@ -172,172 +167,238 @@
 
     <h2 class="text-3xl font-bold mb-4 mt-4 leading-tight">What is Spartan Science?</h2>
     <div class="flex flex-col space-y-4">
-    <p>Spartan Science is the official magazine of MSU’s College of Natural Science, dedicated to shining a spotlight on trail‑blazing research, compelling student and faculty stories, and the transformative impact of science on society. Each issue offers in-depth features on discoveries in fields such as biotechnology, neuroscience, ecology, and computational science highlighted by interviews with Spartan researchers, hands‑on lab updates, and opportunities for undergraduate involvement.</p>
-    <p>Readers enjoy:</p>
-    <ul class="list-disc ml-4 mr-4">
-        <li>Cutting‑edge research spotlights — from groundbreaking climate models to advancements in gene editing and materials science.</li>
-        <li>Student perspectives — stories from undergraduates and graduate students, sharing their academic journeys, internships, competitions, and lab life.</li>
-        <li>Community & outreach highlights — initiatives like STEM education programs, local environmental partnerships, and demonstration events showcasing how science empowers communities.</li>
-        <li>Science news and innovation — summaries of recent findings, patents, and university‑industry collaborations that demonstrate how Spartan discoveries reach the classroom and the marketplace.</li>
-    </ul>
-    <p>Whether you're a prospective student curious about the sciences, a current Spartan looking for inspiration, or an alum staying connected, Spartan Science delivers insights into how Michigan State is fueling curiosity, cultivating innovation, and shaping the future.</p>
-   </div>
-    <h2 class="text-3xl font-bold mb-4 mt-4 leading-tight">Stories</h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-    <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story1.html">
-            <img class="rounded-t-lg" src="https://natsci.msu.edu/_assets/images/news/2025/06-soil.jpg" alt="" />
-        </a>
-        <div class="p-5 flex flex-col flex-grow justify-between">
-            <div>
-            <a href="story1.html">
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cracking the Nitrogen Puzzle</h2>
-            </a>
-            </div>
-            <a href="story1.html" class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                Read story
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
-        </div>
+      <p>Spartan Science is the official magazine of MSU’s College of Natural Science, dedicated to shining a spotlight
+        on trail‑blazing research, compelling student and faculty stories, and the transformative impact of science on
+        society. Each issue offers in-depth features on discoveries in fields such as biotechnology, neuroscience,
+        ecology, and computational science highlighted by interviews with Spartan researchers, hands‑on lab updates, and
+        opportunities for undergraduate involvement.</p>
+      <p>Readers enjoy:</p>
+      <ul class="list-disc ml-4 mr-4">
+        <li>Cutting‑edge research spotlights — from groundbreaking climate models to advancements in gene editing and
+          materials science.</li>
+        <li>Student perspectives — stories from undergraduates and graduate students, sharing their academic journeys,
+          internships, competitions, and lab life.</li>
+        <li>Community & outreach highlights — initiatives like STEM education programs, local environmental
+          partnerships, and demonstration events showcasing how science empowers communities.</li>
+        <li>Science news and innovation — summaries of recent findings, patents, and university‑industry collaborations
+          that demonstrate how Spartan discoveries reach the classroom and the marketplace.</li>
+      </ul>
+      <p>Whether you're a prospective student curious about the sciences, a current Spartan looking for inspiration, or
+        an alum staying connected, Spartan Science delivers insights into how Michigan State is fueling curiosity,
+        cultivating innovation, and shaping the future.</p>
     </div>
-        <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story2.html">
-            <img class="rounded-t-lg" src="https://natsci.msu.edu/_assets/images/news/2025/2025-03-zebra-%20heliconian-butterfly.web.jpg" alt="" />
+    <h2 class="text-3xl font-bold mb-4 mt-10 leading-tight">Stories</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <div
+        class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
+        <a href="story1.html">
+          <img class="rounded-t-lg" src="/images/story1.png" alt="" />
         </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
-            <div>
+          <div>
+            <a href="story1.html">
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cracking the Nitrogen
+                Puzzle</h2>
+            </a>
+          </div>
+          <a href="story1.html"
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            Read story
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
+        <a href="story2.html">
+          <img class="rounded-t-lg"
+            src="images/story2.png"
+            alt="" />
+        </a>
+        <div class="p-5 flex flex-col flex-grow justify-between">
+          <div>
             <a href="story2.html">
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Study raises the possibility of a country without butterflies</h2>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Study raises the
+                possibility of a country without butterflies</h2>
             </a>
-            </div>
-            <a href="story2.html" class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                Read story
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+          </div>
+          <a href="story2.html"
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            Read story
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
-    </div>
-        <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
+      </div>
+      <div
+        class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
         <a href="story1.html">
-            <img class="rounded-t-lg" src="https://natsci.msu.edu/_assets/images/news/2025/06-soil.jpg" alt="" />
+          <img class="rounded-t-lg" src="images/story3.png" alt="" />
         </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
-            <div>
+          <div>
             <a href="story1.html">
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cracking the Nitrogen Puzzle</h2>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Spartan making an impact on Michigan</h2>
             </a>
-            </div>
-            <a href="story1.html" class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                Read story
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+          </div>
+          <a href="story1.html"
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            Read story
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
-    </div>
-        <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
+      </div>
+      <div
+        class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
         <a href="story2.html">
-            <img class="rounded-t-lg" src="https://natsci.msu.edu/_assets/images/news/2025/2025-03-zebra-%20heliconian-butterfly.web.jpg" alt="" />
+          <img class="rounded-t-lg"
+            src="images/story4.png"
+            alt="" />
         </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
-            <div>
+          <div>
             <a href="story2.html">
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Study raises the possibility of a country without butterflies</h2>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MSU's own rock detective</h2>
             </a>
-            </div>
-            <a href="story2.html" class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                Read story
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+          </div>
+          <a href="story2.html"
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            Read story
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
-    </div>
-        <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
+      </div>
+      <div
+        class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
         <a href="story1.html">
-            <img class="rounded-t-lg" src="https://natsci.msu.edu/_assets/images/news/2025/06-soil.jpg" alt="" />
+          <img class="rounded-t-lg" src="images/story5.png" alt="" />
         </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
-            <div>
+          <div>
             <a href="story1.html">
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cracking the Nitrogen Puzzle</h2>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">How climate change affects GI health</h2>
             </a>
-            </div>
-            <a href="story1.html" class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                Read story
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+          </div>
+          <a href="story1.html"
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            Read story
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
-    </div>
-        <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
+      </div>
+      <div
+        class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
         <a href="story2.html">
-            <img class="rounded-t-lg" src="https://natsci.msu.edu/_assets/images/news/2025/2025-03-zebra-%20heliconian-butterfly.web.jpg" alt="" />
+          <img class="rounded-t-lg"
+            src="images/story6.png"
+            alt="" />
         </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
-            <div>
+          <div>
             <a href="story2.html">
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Study raises the possibility of a country without butterflies</h2>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Solving the mystery of how planets are formed</h2>
             </a>
-            </div>
-            <a href="story2.html" class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                Read story
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+          </div>
+          <a href="story2.html"
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            Read story
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
-    </div>
-        <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
+      </div>
+      <div
+        class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
         <a href="story1.html">
-            <img class="rounded-t-lg" src="https://natsci.msu.edu/_assets/images/news/2025/06-soil.jpg" alt="" />
+          <img class="rounded-t-lg" src="images/story7.png" alt="" />
         </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
-            <div>
+          <div>
             <a href="story1.html">
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cracking the Nitrogen Puzzle</h2>
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Understanding grasslands - the bigger picture</h2>
             </a>
-            </div>
-            <a href="story1.html" class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                Read story
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+          </div>
+          <a href="story1.html"
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            Read story
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
-    </div>
-        <div class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
+      </div>
+      <div
+        class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
         <a href="story2.html">
-            <img class="rounded-t-lg" src="https://natsci.msu.edu/_assets/images/news/2025/2025-03-zebra-%20heliconian-butterfly.web.jpg" alt="" />
+          <img class="rounded-t-lg"
+            src="images/story8.png"
+            alt="" />
         </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
-            <div>
-        <a href="story2.html">
-                <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Study raises the possibility of a country without butterflies</h2>
+          <div>
+            <a href="story2.html">
+              <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Scientist. Artist. Activist. Global Spartan.</h2>
             </a>
-            </div>
-            <a href="story2.html" class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
-                Read story
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+          </div>
+          <a href="story2.html"
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            Read story
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
         </div>
+      </div>
     </div>
-</div>
-    <h2 class="text-3xl font-bold mb-4 mt-4 leading-tight">Contact Advancement</h2>
+<!--    <h2 class="text-3xl font-bold mb-4 mt-4 leading-tight">Contact Advancement</h2>
     <div class="flex flex-col space-y-4">
-<address>
-College of Natural Science Advancement Office<br />
-Michigan State University<br />
-288 Farm Lane, Room 103<br />
-East Lansing, MI 48824
-</address>
-<p>Phone: <a class="text-green-800 underline" href="tel:+5173539855">517-353-9855</a></p>
+      <address>
+        College of Natural Science Advancement Office<br />
+        Michigan State University<br />
+        288 Farm Lane, Room 103<br />
+        East Lansing, MI 48824
+      </address>
+      <p>Phone: <a class="text-green-800 underline" href="tel:+5173539855">517-353-9855</a></p>
+    </div>-->
+
+    <h2 class="text-3xl font-bold mb-4 mt-10 leading-tight">Together, We Shape a Far Better World.</h2>
+    <div class="flex flex-col space-y-4">
+      <p>Michigan State University has launched its most ambitious initiative yet — <a class="text-green-800 underline" href="https://farbetterworld.msu.edu/" target="_blank">Uncommon Will, Far Better World</a> — a 10 year campaign to propel the university and the world forward through bold investment in people, ideas, and impact.</p>
+      <p>At the College of Natural Science, we are answering this call with an unwavering focus on what matters most: advancing faculty excellence, cultivating student success, pursuing interdisciplinary research to address global challenges, and empowering communities.</p>
+      <p>We are driven by curiosity, compassion, and a commitment to make the world better—through science, education, and service. With your help, we will rise to the challenge. Together, we can build a far better world. This is our moment, join us.</p>
+      <address>
+        College of Natural Science Advancement Office<br />
+        Michigan State University<br />
+        288 Farm Lane, Room 103<br />
+        East Lansing, MI 48824
+      </address>
+      <p>Phone: <a class="text-green-800 underline" href="tel:+5173539855">517-353-9855</a></p>
     </div>
 
   </main>
@@ -519,7 +580,7 @@ East Lansing, MI 48824
   </footer>
 
 
-    <!-- Script for mobile nav toggle -->
+  <!-- Script for mobile nav toggle -->
   <script>
     document.getElementById('navToggle').addEventListener('click', function () {
       const menu = document.getElementById('mobileMenu');
@@ -527,4 +588,5 @@ East Lansing, MI 48824
     });
   </script>
 </body>
+
 </html>
