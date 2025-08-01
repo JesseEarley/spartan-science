@@ -1,6 +1,38 @@
-    * {
+    body {
       font-family: 'Metropolis', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
+
+    footer a:focus,
+    .bg-white a:focus{
+      outline: 2px solid #000;
+      outline-offset: 4px;
+    }
+
+     #Homepage main a:focus,
+     #TOC .grid a:focus,
+    .bg-black a:focus{
+      outline: 2px solid #FFF;
+      outline-offset: 4px;
+    }
+
+
+
+    .text-MSU-green{
+      color: #2EA33E;
+    }
+
+    .bg-MSU-green{
+      background-color: #2EA33E;
+    }
+
+    .hover\:bg-MSU-green:hover,
+    .hover\:bg-MSU-green:focus{
+      background-color: #3CC94C;
+      color: #000;
+    }
+
     .grid__container--large {
       max-width: 1170px;
       margin: 0 auto;
@@ -18,12 +50,12 @@
     }
 
     .applicationFooter {
-      color: #555;
+      color: #111;
       padding: 2rem;
     }
 
     .applicationFooter svg {
-      fill: #18453b;
+      fill: #000;
       max-width: 250px;
       margin-left: 10px;
       align-self: center;
@@ -49,7 +81,7 @@
 
     .applicationFooter ul li {
       display: inline-block;
-      font-size: .8rem;
+      font-size: .9rem;
       padding: 0 .5rem;
     }
 
@@ -76,9 +108,10 @@
       flex: 1;
     }
 
-    .hideDesktop{
+    .hideDesktop {
       display: none;
     }
+
     .hideMobile {
       display: flex;
     }
@@ -100,9 +133,11 @@
       .applicationFooter svg {
         margin: 0 auto;
       }
+
       .hideMobile {
         display: none;
       }
+
       .hideDesktop {
         display: flex;
       }
