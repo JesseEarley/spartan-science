@@ -5,13 +5,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Feature Article</title>
+  <title>Feature Story</title>
   <link href="https://fonts.cdnfonts.com/css/metropolis-2" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-900 font-serif">
+<body id="TOC" class="bg-gray-100 text-black-900">
 
   <header class="bg-white shadow p-4 md:p-4 sticky top-0 z-50">
     <div class="flex justify-between items-center">
@@ -139,30 +139,23 @@
           </svg>
         </a>
         <a href="index.html">
-          <span class="text-3xl md:text-4xl font-bold">SPARTAN<span class="text-green-500">SCIENCE</span></span>
+          <span class="text-3xl md:text-4xl font-bold">SPARTAN<span class="text-MSU-green">SCIENCE</span></span>
         </a>
       </div>
-      <!-- Mobile menu button -->
-      <button id="navToggle" class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex space-x-6 text-sm uppercase">
-        <a href="toc.html" class="hover:underline">In This Issue...</a>
+      <!-- Nav -->
+      <nav class="md:flex space-x-6 text-sm uppercase">
+        <a href="toc.html" class="hover:underline" aria-label="Menu" title="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </a>
       </nav>
-    </div>
-
-    <!-- Mobile Nav -->
-    <div id="mobileMenu" class="hidden flex-col space-y-2 mt-4 md:hidden text-sm uppercase">
-      <a href="toc.html" class="hover:underline">In This Issue...</a>
     </div>
   </header>
 
 
   <!-- Article Content -->
-  <main class="max-w-6xl mx-auto py-16 px-6 bg-white shadow-lg">
+  <main class="text-lg font-normal max-w-6xl mx-auto py-16 px-6 bg-white shadow-lg">
     <h1 class="text-4xl font-bold mb-4 leading-tight">In This Issue...</h1>
 
     <h2 class="text-3xl font-bold mb-4 mt-4 leading-tight">What is Spartan Science?</h2>
@@ -191,18 +184,14 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
       <div
         class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story1.html">
           <img class="rounded-t-lg" src="images/story1.png" alt="" />
-        </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <a href="story1.html">
               <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cracking the Nitrogen
                 Puzzle</h2>
-            </a>
           </div>
           <a href="story1.html"
-            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-MSU-green hover:bg-MSU-green">
             Read story
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               fill="none" viewBox="0 0 14 10">
@@ -214,20 +203,16 @@
       </div>
       <div
         class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story2.html">
           <img class="rounded-t-lg"
             src="images/story2.png"
             alt="" />
-        </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <a href="story2.html">
               <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Study raises the
                 possibility of a country without butterflies</h2>
-            </a>
           </div>
           <a href="story2.html"
-            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-MSU-green hover:bg-MSU-green">
             Read story
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               fill="none" viewBox="0 0 14 10">
@@ -239,17 +224,13 @@
       </div>
       <div
         class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story1.html">
           <img class="rounded-t-lg" src="images/story3.png" alt="" />
-        </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <a href="story1.html">
               <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Spartan making an impact on Michigan</h2>
-            </a>
           </div>
           <a href="story1.html"
-            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-MSU-green hover:bg-MSU-green">
             Read story
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               fill="none" viewBox="0 0 14 10">
@@ -261,19 +242,15 @@
       </div>
       <div
         class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story2.html">
           <img class="rounded-t-lg"
             src="images/story4.png"
             alt="" />
-        </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <a href="story2.html">
               <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MSU's own rock detective</h2>
-            </a>
           </div>
           <a href="story2.html"
-            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-MSU-green hover:bg-MSU-green">
             Read story
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               fill="none" viewBox="0 0 14 10">
@@ -285,17 +262,13 @@
       </div>
       <div
         class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story1.html">
           <img class="rounded-t-lg" src="images/story5.png" alt="" />
-        </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <a href="story1.html">
               <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">How climate change affects GI health</h2>
-            </a>
           </div>
           <a href="story1.html"
-            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-MSU-green hover:bg-MSU-green">
             Read story
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               fill="none" viewBox="0 0 14 10">
@@ -307,19 +280,15 @@
       </div>
       <div
         class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story2.html">
           <img class="rounded-t-lg"
             src="images/story6.png"
             alt="" />
-        </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <a href="story2.html">
               <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Solving the mystery of how planets are formed</h2>
-            </a>
           </div>
           <a href="story2.html"
-            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-MSU-green hover:bg-MSU-green">
             Read story
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               fill="none" viewBox="0 0 14 10">
@@ -331,17 +300,13 @@
       </div>
       <div
         class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story1.html">
           <img class="rounded-t-lg" src="images/story7.png" alt="" />
-        </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <a href="story1.html">
               <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Understanding grasslands - the bigger picture</h2>
-            </a>
           </div>
           <a href="story1.html"
-            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-MSU-green hover:bg-MSU-green">
             Read story
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               fill="none" viewBox="0 0 14 10">
@@ -353,19 +318,15 @@
       </div>
       <div
         class="mx-auto max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-black dark:border-gray-700 flex flex-col">
-        <a href="story2.html">
           <img class="rounded-t-lg"
             src="images/story8.png"
             alt="" />
-        </a>
         <div class="p-5 flex flex-col flex-grow justify-between">
           <div>
-            <a href="story2.html">
               <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Scientist. Artist. Activist. Global Spartan.</h2>
-            </a>
           </div>
           <a href="story2.html"
-            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">
+            class="mt-auto self-start inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-MSU-green hover:bg-MSU-green">
             Read story
             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               fill="none" viewBox="0 0 14 10">
@@ -376,20 +337,10 @@
         </div>
       </div>
     </div>
-<!--    <h2 class="text-3xl font-bold mb-4 mt-4 leading-tight">Contact Advancement</h2>
-    <div class="flex flex-col space-y-4">
-      <address>
-        College of Natural Science Advancement Office<br />
-        Michigan State University<br />
-        288 Farm Lane, Room 103<br />
-        East Lansing, MI 48824
-      </address>
-      <p>Phone: <a class="text-green-800 underline" href="tel:+5173539855">517-353-9855</a></p>
-    </div>-->
 
     <h2 class="text-3xl font-bold mb-4 mt-10 leading-tight">Together, We Shape a Far Better World.</h2>
     <div class="flex flex-col space-y-4">
-      <p>Michigan State University has launched its most ambitious initiative yet — <a class="text-green-800 underline" href="https://farbetterworld.msu.edu/" target="_blank">Uncommon Will, Far Better World</a> — a 10 year campaign to propel the university and the world forward through bold investment in people, ideas, and impact.</p>
+      <p>Michigan State University has launched its most ambitious initiative yet — <a class="text-green-800 font-bold underline" href="https://farbetterworld.msu.edu/" target="_blank">Uncommon Will, Far Better World</a> — a 10 year campaign to propel the university and the world forward through bold investment in people, ideas, and impact.</p>
       <p>At the College of Natural Science, we are answering this call with an unwavering focus on what matters most: advancing faculty excellence, cultivating student success, pursuing interdisciplinary research to address global challenges, and empowering communities.</p>
       <p>We are driven by curiosity, compassion, and a commitment to make the world better—through science, education, and service. With your help, we will rise to the challenge. Together, we can build a far better world. This is our moment, join us.</p>
       <address>
@@ -398,7 +349,7 @@
         288 Farm Lane, Room 103<br />
         East Lansing, MI 48824
       </address>
-      <p>Phone: <a class="text-green-800 underline" href="tel:+5173539855">517-353-9855</a></p>
+      <p>Phone: <a class="text-green-800 underline font-bold" href="tel:+5173539855">517-353-9855</a></p>
     </div>
 
   </main>
